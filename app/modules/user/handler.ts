@@ -24,7 +24,8 @@ const UserHandler = (app: Elysia) =>
                 if(result.status) {
                     set.status = 200
                     const token = await jwt.sign({
-                        id: data.id
+                        id: data.id,
+                        date: new Date().getMilliseconds()
                     })
                     set.status = 200
                     data['token'] = token 
@@ -37,8 +38,7 @@ const UserHandler = (app: Elysia) =>
             } catch(e: unknown) {
                 set.status = 500
                 return {
-                    msg: 'Unable to retrieve items from the database',
-                    status: 500
+                    msg: 'Unable to retrieve items from the database'
                 }
             }
         })
@@ -54,8 +54,7 @@ const UserHandler = (app: Elysia) =>
             } catch(e: unknown) {
                 set.status = 500
                 return {
-                    msg: 'Unable to retrieve items from the database',
-                    status: 500
+                    msg: 'Unable to retrieve items from the database'
                 }
             }
         })

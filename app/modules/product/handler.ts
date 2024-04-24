@@ -33,8 +33,7 @@ const ProductHandler = (app: Elysia) =>
         } catch (e: unknown) {
             set.status = 500
             return {
-                msg: 'Unable to retrieve items from the database',
-                status: 500
+                msg: 'Unable to retrieve items from the database'
             }
         }
     })
@@ -49,8 +48,7 @@ const ProductHandler = (app: Elysia) =>
         } catch (e: unknown) {
             set.status = 500
             return {
-                msg: 'Unable to retrieve items from the database',
-                status: 500
+                msg: 'Unable to retrieve items from the database'
             }
         }
     })
@@ -65,8 +63,7 @@ const ProductHandler = (app: Elysia) =>
         } catch (e: unknown) {
             set.status = 500
             return {
-                msg: 'Unable to retrieve items from the database',
-                status: 500
+                msg: 'Unable to retrieve items from the database'
             }
         }
     })
@@ -88,8 +85,7 @@ const ProductHandler = (app: Elysia) =>
             } catch (e: unknown) {
                 set.status = 500
                 return {
-                    msg: 'Unable to retrieve items from the database',
-                    status: 500
+                    msg: 'Unable to retrieve items from the database'
                 }
             }
         })
@@ -104,8 +100,7 @@ const ProductHandler = (app: Elysia) =>
             } catch (e: unknown) {
                 set.status = 500
                 return {
-                    msg: 'Unable to retrieve items from the database',
-                    status: 500
+                    msg: 'Unable to retrieve items from the database'
                 }
             }
         })
